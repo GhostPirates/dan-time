@@ -106,4 +106,10 @@ function doTheThing(item) {
 }
 
 inputTimes.forEach((item) => { inputList.innerHTML+=`<li>${item}</li>` });
-inputTimes.forEach((item) => { outputList.innerHTML+=`<li>${doTheThing(item)}</li>`});
+inputTimes.forEach((item) => {
+  if ( doTheThing(item) ) {
+    outputList.innerHTML+=`<li>${doTheThing(item)}</li>`
+  } else {
+    outputList.innerHTML+=`<li class="error">${doTheThing(item)}</li>`
+  }
+});

@@ -30,3 +30,8 @@ body {
   align-items: flex-start;
   justify-content: center;
 }
+
+.error {
+  font-weight: 500;
+  color: #f80000;
+}
